@@ -29,7 +29,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: white;
-    background-color: #676735;
+    background-color: #e0e0d1;
     height: 100vh;
   }
 

@@ -9,7 +9,7 @@
       </el-tabs>
     </div>
     <div class="videoList">
-      <div v-for="(item, index) in videoList" :key="index" class="video">
+      <div v-for="(item, index) in videoList" :key="index" class="video" @click="goVideo">
         <div class="video-img"><img class="img" :src="item.coverPhoto" /></div>
         <div class="video-desc">
           <span class="video-name">{{item.videoName}}</span>
@@ -79,6 +79,11 @@
     methods: {
       getCurrentPage(){
 
+      },
+      goVideo(){
+        this.$router.push({
+          name:"Video"
+        })
       }
     }
   }
@@ -90,6 +95,7 @@
     width: 100%;
     overflow: scroll;
     overflow-x: hidden;
+    background-color: #676b64;
   }
   .header{
     height: 12%;
